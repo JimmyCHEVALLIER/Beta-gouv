@@ -1,0 +1,10 @@
+:host {
+  &.compteur-cmp > div {
+    position: relative;
+  }
+  &app-cadran {
+    height: auto;
+    width: auto;
+    left: 100px;
+  }
+}

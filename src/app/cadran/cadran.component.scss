@@ -1,0 +1,25 @@
+:host {
+  #cadran {
+    height: 400px;
+    margin: 40px auto;
+    position: relative;
+    width: 400px;
+    border: 10px solid #3a5486;
+    box-shadow: 0 0 40px #8080a0, 0 0 50px 10px #cccccc inset;
+    border-radius: 50%;
+    transform: rotate(180deg);
+  }
+
+  #aiguille {
+    position: absolute;
+    left: 198px;
+    top: 25px;
+    height: 180px;
+    border-radius: 50%;
+    transform-origin: bottom;
+    border: 2px solid rgba(110, 150, 180, 0.8);
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    -ms-transition: -ms-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+  }
+}
