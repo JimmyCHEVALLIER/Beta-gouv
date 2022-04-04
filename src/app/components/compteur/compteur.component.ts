@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CompteurService } from '../../services/compteur-service';
 
 @Component({
   selector: 'app-compteur',
@@ -6,8 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./compteur.component.scss']
 })
 export class CompteurComponent implements OnInit {
-  _counterValue = 0;
-  constructor() { }
+  constructor(private compteurService: CompteurService) { }
 
   ngOnInit() {
   }

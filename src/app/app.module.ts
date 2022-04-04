@@ -1,10 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CompteurService } from './services/compteur-service';
 
 import { AppComponent } from './app.component';
-import { CompteurComponent } from './compteur/compteur.component';
-import { ControllerComponent } from './controller/controller.component';
-import { CadranComponent } from './cadran/cadran.component';
+import { CompteurComponent } from './components/compteur/compteur.component';
+import { ControllerComponent } from './components/controller/controller.component';
+import { CadranComponent } from './components/cadran/cadran.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,9 +16,10 @@ import { CadranComponent } from './cadran/cadran.component';
     CadranComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [CompteurService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

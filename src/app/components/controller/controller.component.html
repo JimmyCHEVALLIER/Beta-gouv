@@ -1,0 +1,10 @@
+<input id="-" [disabled]="this.compteurService.compteurData.getValue()<=0" type="button" value="-" (click)="valueChanged($event)">
+<label>{{this.compteurService.compteurData.getValue()}}%</label>
+<input id="+" [disabled]="this.compteurService.compteurData.getValue()>=200" type="button" value="+" (click)="valueChanged($event)">
+
+<h2>Or enter your value in % (then press enter)</h2>
+
+<form [formGroup]="counterForm" (ngSubmit)="onFormSubmit()">
+    <input min="0" max="200" type="number" formControlName="_count"  placeholder="Enter Name">
+    <span>%</span>
+  </form> 

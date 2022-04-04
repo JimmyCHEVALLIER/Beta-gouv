@@ -15,7 +15,7 @@ export class CadranComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes) {
-    this.Angle = 'rotate(' + changes.CounterCadran.currentValue * 18 + 'deg)';
+    this.Angle = 'rotate(' + changes.CounterCadran.currentValue * 1.8 + 'deg)';
   }
 
 }
